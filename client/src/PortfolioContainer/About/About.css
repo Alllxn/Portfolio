@@ -1,0 +1,142 @@
+#biography-soft-skills{
+    flex-basis: 100%;
+}
+
+#about-container h3,
+#about-container h4{
+    font-weight: bold;
+}
+
+#about-container h3{
+    max-width: 100%;
+}
+
+#biography p{
+    font-size: 1.1rem;
+}
+
+#biography > p:nth-child(2){
+    margin-bottom: 10px;
+}
+
+#about-presentation .card{
+    margin-bottom: 20px;
+}
+
+#biography-more-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#biography-more-info > .biography-element{
+    margin-bottom: 30px;
+    height: fit-content;
+}
+
+#button-know-more{
+    height: 40px;
+}
+
+#biography-more-info{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.biography-element{
+    padding-left: 5px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.biography-element ul{
+    padding-left: 35px;
+}
+
+.biography-element li > p{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.biography-element li > p span:nth-child(2){
+    position: absolute;
+    left: -30px;
+}
+
+.biography-element:not(:first-child) span:first-child {
+    opacity: 0.5;
+}
+
+#biography-education li p:first-child{
+    margin: 0;
+}
+
+#biography li p{
+    margin-bottom: 5px;
+}
+
+#biography li p svg{
+    width: 25px;
+    height: 25px;
+}
+
+#biography li p:nth-child(n+2) > span{
+    opacity: 0.5;
+}
+
+#biography-skills li p{
+    display: flex;
+}
+
+.biography-element li p > *{
+    margin-right: 5px;
+}
+
+#know-me-more-container{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#know-me-more-container > p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (min-width: 576px){
+    #biography-education{
+        flex-basis: 100%;
+    }
+
+    #biography-interests{
+        flex-basis: 50%;
+        padding-right: 5px;
+    }
+
+    #biography-skills{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #biography-more-info{
+        justify-content: space-between;
+    }
+
+    #biography-interests{
+        flex-basis: fit-content;
+    }
+
+    #biography-skills{
+        flex-basis: fit-content;
+    }
+
+    #biography-soft-skills{
+        flex-basis: 33%;
+    }
+}

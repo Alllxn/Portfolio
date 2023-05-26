@@ -1,0 +1,13 @@
+#work-container ol#work-wrap{ 
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;  
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    #work-container ol#work-wrap{
+        justify-content: space-between;      
+    }
+}

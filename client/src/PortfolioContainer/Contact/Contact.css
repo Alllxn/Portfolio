@@ -1,0 +1,200 @@
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 55%;
+    min-height: 100vh;
+}
+
+#contact-container #contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 8px;
+}
+
+#contact-container #contact-wrapper #contact-links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-container #contact-wrapper #contact-links ul li{
+    flex-basis: 50%;
+}
+
+#contact-container #contact-wrapper #contact-links ul li a{
+    margin-bottom: 10px;
+}
+
+#contact-container #contact-wrapper #contact-links ul li a span:last-child{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+#contact-container #contact-wrapper #contact-links ul li a span:first-child{
+    height: 100%;
+    min-width: 50px;
+    text-align: center;
+}
+
+#contact-container #contact-wrapper #contact-links ul li a span:last-child{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+#contact-container #contact-wrapper #contact-links ul li a svg{
+    width: 24px;
+    vertical-align: middle;
+} */
+
+#contact-container #contact-wrapper #form-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-container #contact-wrapper #form-contact #form-contact-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field span:not(.input-error){
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primario);
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field input{
+    height: 50px;
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field input.invalid{
+    background-color: firebrick;
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field textarea{
+    min-height: 150px;
+}
+
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field input,
+#contact-container #contact-wrapper #form-contact .form-contact-part .contact-field textarea{
+    padding: 10px 10px 10px 40px;
+    border:none;
+    border-radius: 10px;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+#contact-container #form-contact #form-contact-submit.form-contact-part{
+    position: relative;
+    flex-basis: 100%;
+}
+
+#contact-container #form-contact #form-contact-submit button[type="submit"] span:last-child{
+    text-align: left;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+    #contact-container #contact-wrapper #contact-links ul li:nth-child(odd){
+        padding-right: 5px;
+    }
+
+    #contact-container #contact-wrapper #contact-links ul li:nth-child(even){
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #contact-container #form-contact #form-contact-submit button[type="submit"]{
+        width: fit-content;
+        min-width: 25%; 
+    }
+
+    #contact-container #contact-wrapper{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #contact-container #contact-wrapper #contact-links ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    #contact-container #contact-wrapper #contact-links ul li{
+        flex-basis: inherit;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    #contact-container #contact-wrapper #contact-links{
+        flex-basis: 25%;
+        width: 25%;
+        padding-bottom: 50px;
+    }
+    
+    #contact-container #contact-wrapper #form-contact{
+        flex-basis: 75%;
+        width: 75%;
+    }
+}
+
+.form-waiting{
+    background-color: var(--custom-blue);
+    color: white;
+}
+
+.form-error{
+    background-color: var(--custom-red);
+    color: white;
+}
+
+.form-success{
+    background-color: var(--custom-green);
+    color: white;
+}
+
+.form-process{
+    background-color: var(--custom-yellow);
+    color: white;
+}
+
+.form-process svg{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

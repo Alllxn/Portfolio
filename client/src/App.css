@@ -1,0 +1,285 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#App{
+  height: 100vh;
+}
+
+header,
+main{
+  height: fit-content;
+  background-color: var(--primario);
+}
+
+header{
+  overflow: hidden;
+  position: relative;
+}
+
+header > video{
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  filter:brightness(0.40);
+}
+
+header .component{
+  min-width: 300px;
+  max-width: 3000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+main .component{
+  padding: 200px 0 0;
+  min-width: 250px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.load-animation{
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .component {
+    padding: 175px 0 0;
+  }
+}
+
+.button-pressed{
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+
+.card{
+  box-shadow: var(--custom-box-shadow);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.text-shadow{
+  text-shadow: 0px 4px 7px rgba(0,0,0,0.7);
+}
+
+.load-animation-element{
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.load-animation-element.load-animation-element-actived{
+  opacity: 1;
+}
+
+h2.load-animation-element::after{
+  width: 0%;
+  transition: width 1s;
+}
+
+h2.load-animation-element.load-animation-element-actived::after{
+  width: 100%;
+}
+
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+@keyframes show_element {
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ============================================================ */
+/* ----- El magic underline es para links con evento hover -----*/
+/* ============================================================ */
+.magic-underline{
+  position: relative;
+}
+
+.magic-underline::after{
+  width: 0%;
+  content: "";
+  height: 4px;
+  background: var(--color-rainbow-animation);
+  background-size: 1800% 1800%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 1s;
+  animation: rainbow 4s ease-in infinite;
+  margin: 0 auto ;
+}
+
+/* ============================================================== */
+/* El magic background es para animar el bg de elementos sin eventos */
+/* ============================================================== */
+.magic-background,
+.magic-background-underline::after{
+  background: var(--color-rainbow-animation);
+  background-size: 5000px 5000px;
+  animation: rainbow 10s ease infinite;
+}
+
+.magic-background-underline{
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.magic-background-underline::after{
+  width: 100%;
+  content: "";
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+.magic-background,
+.magic-background-underline{
+  position: relative;
+}
+
+.project-container article.project-card .project-information .project-type{
+  background-color: grey;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+h2.magic-background-underline{
+  font-size: 2.5rem;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  h2.magic-background-underline{
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: fit-content;
+  }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--contraste-primario)
+}
+
+p, span, li{
+  color: var(--contraste-primario);
+}
+
+button{
+  font-family: inherit;
+}
+
+input,
+textarea{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.input-error{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  background-color: #F44336;
+  width: 100%;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.input-error svg{
+  margin-right: 10px;
+}
+
+.input-error:before {
+  border: 26px solid #F44336;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top:-50px;
+  right: 25px;
+  transform: rotate(180deg);
+}
+
+.button-cta{
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin: 0 0 10px;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--contraste-primario);
+  overflow: hidden;
+}
+
+.button-cta span:first-child{
+  font-size: 1.5rem;
+  min-height: 50px;
+  min-width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+.button-cta span:first-child svg{
+  filter: drop-shadow(0px 0px 5px #222);
+}
+
+.button-cta span:last-child{
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  color: var(--primary);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}

@@ -1,0 +1,131 @@
+{
+    "Projects" : [
+        {
+            "Name" : "Grupo MBC",
+            "Type" : "CMS",
+            "Year" : "2020",
+            "Description" : "CMS for a formation center with Moodle",
+            "Colores" : [
+                "#2a2658",
+                "#c04f28"
+            ],
+            "Images" : [
+                "/MBC-login.png",
+                "/MBC-main.png",
+                "/MBC-curse-page.png"
+            ],
+            "Tecnologies" : [
+                "Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports."
+            ],
+            "Links" : [
+                "https://grupombc.info/",
+                "https://a1.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Escuela de Hostelería de Las Palmas",
+            "Type" : "CMS",
+            "Year" : "2020",
+            "Description" : "CMS for a school of hostelry with Moodle",
+            "Colores" : [
+                "#a21c26",
+                "#585757"
+            ],
+            "Images" : [
+                "/EH-login.png",
+                "/EH-main.png",
+                "/EH-curse-page.png"
+            ],
+            "Tecnologies" : [
+                "Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports."
+            ],
+            "Links" : [
+                "https://www.escueladehostelerialp.com/",
+                "https://a2.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Escuela Superior de Hostelería de Canarias",
+            "Type" : "CMS",
+            "Year" : "2020",
+            "Description" : "CMS for a school of hostelry of the canary islands with Moodle",
+            "Colores" : [
+                "#003944",
+                "#f67b2f"
+            ],
+            "Images" : [
+                "/EHT-login.png",
+                "/EHT-main.png",
+                "/EHT-curse-page.png"
+            ],
+            "Tecnologies" : [
+                "Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports."
+            ],
+            "Links" : [
+                "https://www.escuelahosteleriacanarias.com/",
+                "https://a3.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Especializa2",
+            "Type" : "CMS",
+            "Year" : "2021",
+            "Description" : "CMS for a private formation center with Moodle",
+            "Colores" : [
+                "#00a6c2",
+                "#17883d"
+            ],
+            "Images" : [
+                "/ESP-login.png",
+                "/ESP-main.png",
+                "/ESP-curse-page.png"
+            ],
+            "Tecnologies" : [
+                "Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "That Moodle is made for private courses.",
+                "I made the designs and animations effects.",
+                "Created virtual classroom, using canvas and JS.",
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports."
+            ],
+            "Links" : [
+                "https://especializa2.com/",
+                "https://aula.especializa2.com/"
+            ]
+        }
+    ]
+}

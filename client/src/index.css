@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+
+:root{
+  --primario: #26282c;
+  --secundario: #2e3036;
+  --terciario: #1de840;
+  --cuarto: #3d67db;
+  --contraste-primario: #ffffff;
+  --color-rainbow-animation: linear-gradient(190deg, var(--terciario), var(--cuarto));
+  --custom-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --custom-red: #F44336;
+  --custom-blue: #2196F3;
+  --custom-yellow: #FFC107;
+  --custom-green: #4CAF50;
+}
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: "Poppins Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 350px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
