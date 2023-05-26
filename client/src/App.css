@@ -108,9 +108,6 @@ h2.load-animation-element.load-animation-element-actived::after{
     }
 }
 
-/* ============================================================ */
-/* ----- El magic underline es para links con evento hover -----*/
-/* ============================================================ */
 .magic-underline{
   position: relative;
 }
@@ -129,9 +126,6 @@ h2.load-animation-element.load-animation-element-actived::after{
   margin: 0 auto ;
 }
 
-/* ============================================================== */
-/* El magic background es para animar el bg de elementos sin eventos */
-/* ============================================================== */
 .magic-background,
 .magic-background-underline::after{
   background: var(--color-rainbow-animation);
