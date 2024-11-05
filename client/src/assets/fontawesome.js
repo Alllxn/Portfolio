@@ -40,6 +40,7 @@ import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faSass } from '@fortawesome/free-brands-svg-icons';
 import { faBrain } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -84,6 +85,7 @@ library.add(
     faCss3Alt,
     faSass,
     faBrain,
-    faArrowUpRightFromSquare
+    faArrowUpRightFromSquare,
+    faJava
 
 );
